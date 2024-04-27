@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Tobias Bardichesky</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #000;
+            color: #fff;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+        .background::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #ff00ff, #00ffff, #ff0000, #00ff00);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+        }
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1 {
+            color: #fff;
+        }
+        .email {
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .preferences {
+            list-style-type: none;
+            padding: 0;
+            color: #fff;
+        }
+        .preferences li {
+            margin-bottom: 10px;
+        }
+        .preferences li a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .preferences li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>a
+    <div class="background"></div>
+    <div class="container">
+        <h1>Perfil de Tobias Bardichesky estudiante de la UAA</h1>
+        <p class="email"><strong>Correo:</strong> TobiasBardichesky@gmail.com</p>
+        <h2>👾Preferencias del Alumno👾</h2>
+        <ul class="preferences">
+            <li><a href="#">Materia favorita</a></li>
+            <li><a href="#">Hobbies</a></li>
+            <li><a href="#">Libros preferidos</a></li>
+            <!-- Agrega más preferencias aquí -->
+        </ul>
+    </div>
+</body>
+</html>
